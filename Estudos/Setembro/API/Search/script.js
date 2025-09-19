@@ -1,5 +1,5 @@
 const input = document.getElementById("search-input");
-const content = document.getElementById("cardPokemon")
+const content = document.getElementById("cardPokemon");
 
 // func = funcao a ser executada
 // delay = tempo de espera em ms
@@ -16,7 +16,7 @@ function debounce(func, delay) {
     }
 }
 
-async function createCard(data) {
+function createCard(data) {
     content.innerHTML = "";
 
     const card = document.createElement('div');
