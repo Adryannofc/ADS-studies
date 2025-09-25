@@ -1,15 +1,22 @@
 Explique como funciona o localStorage em JavaScript e dê um exemplo de situação
-prática em que ele pode ser utilizado.
+prática em que ele pode ser utilizado. 
 
+R = É uma API WEB de armazenamento que permite voce salvar informacoes/persitir dados do usuario localmente
 
 2. Descreva o que representa o valor da propriedade flex-grow em um item dentro de
 um container Flexbox e como ele influencia o layout.
 
+R = Ele distribui um espaco livre dentro de um container
+
 3. Ao criar objetos em JavaScript usando funções construtoras, explique como deve
 ser feita a chamada da função e o papel da palavra-chave this.
 
+R = É necessario o uso do new.
+
 4. Em JavaScript (ES6), como os métodos de uma classe são definidos? Explique
 também a relação deles com o protótipo da classe.
+
+
 
 5. Em CSS, qual propriedade Flexbox permite alinhar os itens ao longo do eixo
 principal? Explique o efeito visual obtido ao alterar seus valores.
