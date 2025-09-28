@@ -21,11 +21,9 @@ function preencher(array, ate){
 
 // preencher(numbers, 50);
 
-
 // 2. Fatorial 📐
 // Crie uma função que receba um número e retorne o fatorial dele.
 // Exemplo: fatorial(5) → 120.
-
 function fatorial(number){
     if(number === 1){
         return number
@@ -42,7 +40,6 @@ function fatorial(number){
 
 // "arara" → verdadeiro
 // "javascript" → falso
-
 function palindronomo(string){
     let newString = string.split('').reverse().join('');
     return string === newString
@@ -50,6 +47,8 @@ function palindronomo(string){
 
 // console.log(palindronomo("arara"));
 
+// 4. Tabuada 📊
+// Escreva um programa que gere a tabuada de um número qualquer (de 1 até 10).
 function tabuada(){
     for(let i = 0; i <= 10; i++){
         for(let j = 0; j <= 10; j++){
@@ -79,7 +78,6 @@ function fibonacci(n){
 // 6. Maior número de um array 📦
 // Dado um array de números, encontre o maior valor dentro dele.
 // Exemplo: [3, 9, 2, 7, 15] → 15.
-
 const lista = [3, 9, 2, 15, 12, 7];
 
 function maior(array){
@@ -94,4 +92,18 @@ function maior(array){
 
 console.log(maior(lista));
 
-console.log(lista.sort());
+// 7. Inversor de string 🔄
+// Faça uma função que receba uma string e retorne a mesma invertida.
+// Exemplo: "javascript" → "tpircsavaj".
+
+// 8. Soma de dígitos ➕
+// Escreva uma função que receba um número inteiro e some todos os seus dígitos.
+// Exemplo: 1234 → 10.
+
+// 9. Ordenação simples 📑
+// Implemente um algoritmo que ordene um array em ordem crescente sem usar .sort().
+// Exemplo: [5, 2, 9, 1] → [1, 2, 5, 9].
+
+// 10. Jogo da adivinhação 🎲
+// Faça um programa que sorteie um número de 1 a 100 e peça para o usuário adivinhar.
+// Dê dicas: "maior" ou "menor" até acertar.
