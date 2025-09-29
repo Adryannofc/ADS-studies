@@ -56,4 +56,4 @@ Agradecimento especial a todos que contribuíram com este projeto:
 </table>
 
 ---
-Feito com ❤️ por Adryannofc.
+by Adryann Felix
