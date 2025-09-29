@@ -56,4 +56,4 @@ Agradecimento especial a todos que contribuíram com este projeto:
 </table>
 
 ---
-by Adryann Felix
+by *Adryann Felix*
