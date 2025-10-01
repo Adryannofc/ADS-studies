@@ -27,7 +27,7 @@ function contaPares(array){
     }
     return cont
 }
-console.log(`Seu array contem ${contaPares(myArray)} pares`);
+console.log(`Seu array contem ${contaPares(myArray)} numeros pares`);
 
 // Exercício 3: Buscando um Elemento
 // 🎯 A Tarefa: Escreva uma função chamada encontraNumero que recebe dois argumentos: um array de números e um número alvo. A função deve retornar true se o alvo estiver no array, e false caso contrário.
@@ -60,9 +60,9 @@ console.log(encontrarNumeroV2(myArray, 5));
 // Exemplo de entrada: [1, 2, 3, 4]
 // Saída esperada (retorno da função): [2, 4, 6, 8]
 function dobraValores(array){
-    let newArray = array[0];
+    let newArray = [];
     for(let i = 0; i < array.length; i++){
-        newArray.push(newArray[i] * 2);
+        newArray.push(array[i] * 2);
     }
     return newArray
 }
