@@ -74,7 +74,7 @@ imprimeNumeros(dobraValores(myArray));
 // Exemplo de entrada: [10, 50, 2, 8, 45]
 // Saída esperada (retorno da função): 50
 function encontraMaior(array){
-    let maior = 0;
+    let maior = array[0];
     for(number of array){
         if(number > maior){
             maior = number
