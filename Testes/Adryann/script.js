@@ -1,13 +1,9 @@
-const produto = {
-    nome: 'Notebook',
-    preco: 2500,
-    emEstoque: true
-};
+let a = 5;
+let b = 10;
 
-function imprimePropriedades(objeto){
-    for(chave in objeto){
-        console.log(`${chave}: ${objeto[chave]}`)
-    }
-}
+a = a + b;
+b = a - b
+a = a - b
 
-imprimePropriedades(produto);
+console.log(a);
+console.log(b)

@@ -80,7 +80,7 @@
 
 @keyframes toActive {
     from {
-        top: 100%;
+        top: 10%;
         opacity: 0;
     }
 }
