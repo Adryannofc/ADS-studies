@@ -3,12 +3,12 @@ function createCard() {
   if (!container) return;
 
   const card = document.createElement('article');
-  card.classList.add('card');
+  card.classList.add('card', 'hidden'); // começa invisível
 
   const img = document.createElement('img');
   img.classList.add('card-image');
-  img.src = 'https://pngimg.com/d/dog_PNG50406.png'; 
-  img.alt = 'Imagem do card'; 
+  img.src = 'https://pngimg.com/d/dog_PNG50406.png';
+  img.alt = 'Imagem do card';
 
   const content = document.createElement('div');
   content.classList.add('card-content');
@@ -23,7 +23,7 @@ function createCard() {
 
   const link = document.createElement('a');
   link.classList.add('card-link');
-  link.href = '#'; 
+  link.href = '#';
   link.textContent = 'Saiba mais';
 
   // montagem
@@ -32,5 +32,24 @@ function createCard() {
   container.appendChild(card);
 }
 
+for (let i = 0; i < 20; i++) {
+  createCard()
 
-createCard()
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Card entrou na tela → mostra
+      entry.target.classList.add('show');
+    } else {
+      // Card saiu da tela → esconde
+      entry.target.classList.remove('show');
+    }
+  });
+}, {
+  threshold: 0.3, // só aciona quando 30% do card estiver visível
+});
+
+// Pega todos os cards e começa a observar
+document.querySelectorAll('.card').forEach(card => observer.observe(card));
