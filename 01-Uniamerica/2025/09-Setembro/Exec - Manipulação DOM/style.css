@@ -1,0 +1,123 @@
+/* --- Estilização Geral da Página 🖌️ --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5; /* Um fundo suave para destacar o formulário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* --- Container Principal do Formulário 📦 --- */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos */
+    padding: 2.5em;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 1s ease-out;
+    width: 100%;
+    max-width: 380px; /* Largura máxima do formulário */
+}
+
+.form:hover {
+    transform: scale(1.009); /* Efeito de leve zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Título e Mensagem 📜 --- */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.mensage {
+    color: #777;
+    font-size: 14px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- Container Flex para os Campos de Input 🔄 --- */
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumenta o espaço entre os campos */
+}
+
+/* --- Estilo dos Rótulos (Labels) e Inputs ✍️ --- */
+.form label {
+    position: relative; /* Essencial para o efeito do rótulo flutuante */
+}
+
+.input {
+    width: 100%;
+    padding: 15px 10px 5px 5px; /* Padding ajustado para o rótulo */
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+/* --- Estilo do Texto do Rótulo (Span) 🏷️ --- */
+.form label span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+/* --- Efeito do Rótulo Flutuante Mágico ✨ --- */
+.input:focus+span,
+.input:valid+span {
+    top: -10px; /* Move o rótulo para cima */
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #007bff; /* Muda a cor quando o campo está ativo */
+    background-color: #ffffff; /* Fundo para não sobrepor a borda */
+    padding: 0 5px;
+}
+
+.input:focus {
+    border-color: #007bff; /* Destaca a borda do input ativo */
+}
+
+/* Remove as setas de campos do tipo "number" */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* --- Botão de Envio 🚀 --- */
+.submit {
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transform: .3s ease;
+    cursor: pointer;
+    margin-top: 10px; /* Espaço extra antes do botão */
+}
+
+.submit:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}

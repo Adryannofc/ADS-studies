@@ -1,0 +1,68 @@
+01 - O localStorage é uma API de armazenamento que permite que você salve informacoes diretamente no navegador do usuario. Exemplo práticp: lembrar o tema de uma site claro/escuro
+
+02 - A propriedade flex-grow define a capacidade de um item flexível crescer se necessário. 
+Ele determina e destrubui um espaco livre extra dentro do container.
+
+03 - É necessário o uso de "new". Dentro de uma funcão construtora quando chamada com new, a palavra-chave this é a referencia para o novo objeto que está sendo centralizado
+
+04 - Os métodos são definidos diretamente dentro do corpo da classe sem usar a palavra-chave "function". O protótipo de classe evite que cada instancia cire uma copia dos metodos, economizando memoria. Assim todas as intancias compartilham as mesmas funcoes do protótipo.
+
+05 - "justify-content" {
+
+    flex-start (padrão) → itens encostam no início do eixo (à esquerda em row).
+
+    flex-end → itens encostam no final do eixo (à direita em row).
+
+    center → itens agrupados no centro do eixo.
+
+    space-between → primeiro item no início, último no fim, e o espaço restante distribuído igualmente entre os itens.
+
+    space-around → espaço igual ao redor de cada item (ou seja, o espaço nas bordas externas é metade do espaço entre os itens).
+
+    space-evenly → todo o espaço é distribuído de forma igual, inclusive nas bordas externas.
+}
+
+06 - Além do valor semantico, tambem serve para definir titulos e subtitulos hierarqucios dentro de uma página.
+
+07 - {
+    localStorage.setItem("usuario", "Maria");
+}
+
+08 - Diferente de cookies, ele não é enviado ao servidor a cada requisição, e os dados ficam disponíveis mesmo depois de fechar e reabrir o navegador. Principais características: Persistencia de dados, armazenamento de chave-valor, dados como strings.
+
+09 - {
+    <a href="">Link</a> // href → atributo essencial que define o destino do link (a URL ou o identificador para onde o navegador deve levar).
+}
+
+10 - O "flex-direction" define qual vai ser o eixo principal do container flexível {
+    row -> Eixo principal: horizontal (da esquerda para a direita).
+    row-reverse -> Também horizontal, mas os itens aparecem da direita para a esquerda.
+    column -> Eixo principal: vertical (de cima para baixo).
+    column-reverse -> Vertical, mas invertido: os itens aparecem de baixo para cima.
+}
+
+11 - O git é uma ferramenta poderosa nos desenvolvimento e gerenciamento de software. Permite que várias pessoas trabalhem ao mesmo tempo sem sobrescrever o trabalho umas das outras, facilica a integracao de mudandas e suporta metologias ageis.
+
+12 - O merge do git é o processo de juntar duas branches diferentes em uma só. {
+    git checkout main
+    git merge "tela-login"
+}
+
+13 - {
+    tag -> p
+    classe -> .button
+    id -> #header
+}
+
+14 - O comando git add . deve ser usado depois que você terminou uma tarefa ou um conjunto de alterações lógicas e antes de você usar git commit para registrar essas alterações no histórico do projeto. Ele é o passo crucial para "selecionar e empacotar" o que será salvo. {
+    git add .
+    git commit -m "descricao"
+}
+
+15 - Quando a funcionalidade está pronta e testada na sua máquina, você executa git push para enviar todo esse trabalho para o reposit…main do projeto no GitHub. {
+    push: O comando para enviar.
+
+    origin: O nome padrão para o repositório remoto principal (geralmente o seu repositório no GitHub).
+
+    main: O nome do "ramo" (branch) local que você quer enviar para o ramo de mesmo nome no servidor remoto.
+}
